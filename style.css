@@ -24,21 +24,23 @@ body{
     margin: auto;
 }
 
-.player video {
-    inline-size: 100%;
-    aspect-ratio: 16/9;
-}
-
 .player{
     margin-block-start: 10rem;
     position: relative;
 }
 
+.player video {
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+}
+
+
 .player-tittle{
-    position: absolute;
     color: #fff;
-    inset-inline-start: 2rem;
+    position: absolute;
     inset-block-start: 0;
+    inset-inline-start: 2rem;
 }
 
 .player-actions{
@@ -49,4 +51,16 @@ body{
     justify-content: center;
     align-items: center;
 
+}
+
+.player-progress{
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 1rem;
+}
+
+.player-progress input{
+    flex: 1;
 }

@@ -12,13 +12,16 @@
 <body>
     <div class="wrapper">
         <div class="player">
-        <video id="video" src="./assets/videos/lofi.mp4" poster="./assets/images/poster.jpg" muted></video>
+            <video id="video" src="./assets/videos/lofi.mp4" poster="./assets/images/poster.jpg" muted></video>
             <h2 class="player-tittle">Musica para Programar</h2>
             <div class="player-actions">
-                <button class="button" id="backward"  title="retroceder 10 segundos"></button>
+                <button class="button" id="backward" title="retroceder 10 segundos"></button>
                 <button class="button" id="play" title="reproducir"></button>
                 <button class="button" id="pause" hidden title="pausar"></button>
                 <button class="button" id="forward" title="avanzar 10 segundos"></button>
+            </div>
+            <div class="player-progress">
+                <input type="range">
             </div>
         </div>
     </div>

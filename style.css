@@ -19,3 +19,34 @@ body{
     background-color: var(--color-principal);
 }
 
+.wrapper{
+    max-inline-size: 90rem;
+    margin: auto;
+}
+
+.player video {
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+}
+
+.player{
+    margin-block-start: 10rem;
+    position: relative;
+}
+
+.player-tittle{
+    position: absolute;
+    color: #fff;
+    inset-inline-start: 2rem;
+    inset-block-start: 0;
+}
+
+.player-actions{
+    color: #fff;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

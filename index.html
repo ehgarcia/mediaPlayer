@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>mediaPlayer</title>
 </head>
-<body>
-    <button class="button" id="backward" title="retroceder 10 segundos"></button>
-    <button class="button" id="play" title="reproducir"></button>
-    <button class="button" id="pause" hidden title="pausar"></button>
-    <button class="button" id="forward" title="avanzar 10 segundos"></button>
-    <video id="video" src="./assets/videos/lofi.mp4" poster="./assets/images/poster.jpg" muted></video>
 
+<body>
+    <div class="wrapper">
+        <div class="player">
+        <video id="video" src="./assets/videos/lofi.mp4" poster="./assets/images/poster.jpg" muted></video>
+            <h2 class="player-tittle">Musica para Programar</h2>
+            <div class="player-actions">
+                <button class="button" id="backward"  title="retroceder 10 segundos"></button>
+                <button class="button" id="play" title="reproducir"></button>
+                <button class="button" id="pause" hidden title="pausar"></button>
+                <button class="button" id="forward" title="avanzar 10 segundos"></button>
+            </div>
+        </div>
+    </div>
     <script src="./main.js"></script>
 </body>
+
 </html>

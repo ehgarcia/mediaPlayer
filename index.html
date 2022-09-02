@@ -14,16 +14,30 @@
         <div class="player">
             <video id="video" src="./assets/videos/lofi.mp4" poster="./assets/images/poster.jpg" muted></video>
             <h2 class="player-tittle">Musica para Programar</h2>
-            <div class="player-actions">
-                <button class="button" id="backward" title="retroceder 10 segundos"></button>
-                <button class="button" id="play" title="reproducir"></button>
-                <button class="button" id="pause" hidden title="pausar"></button>
-                <button class="button" id="forward" title="avanzar 10 segundos"></button>
-            </div>
-            <div class="player-progress">
-                <input type="range">
+            <div class="player-overlay">
+                <div class="player-actions">
+                    <button class="button" id="backward" title="retroceder 10 segundos"></button>
+                    <button class="button" id="play" title="reproducir"></button>
+                    <button class="button" id="pause" hidden title="pausar"></button>
+                    <button class="button" id="forward" title="avanzar 10 segundos"></button>
+                </div>
+                <div class="player-progress">
+                    <input id="progress" type="range" />
+                </div>
             </div>
         </div>
+
+        <div class="options">
+            <h3 class="options-title">Otros Videos</h3>
+            <div class="options-wrapper">
+                <div class="options-video" ><img id="httyd" class="options-video_img" src="./assets/images/HOW_TO_TRAIN_YOUR_DRAGON.jpg"
+                        alt="How To Train Your Dragon" title="How To Train Your Dragon"></div>
+                <div class="options-video" ><img  id="httyd2" class="options-video_img" src="./assets/images/HOW_TO_TRAIN_YOUR_DRAGON-2.jpg"
+                        alt="How To Train Your Dragon - 2" title="How To Train Your Dragon - 2"></div>
+                <div class="options-video" ><img id="httyd3" class="options-video_img" src="./assets/images/HOW_TO_TRAIN_YOUR_DRAGON-3.jpg"
+                        alt="How To Train Your Dragon - 3" title="How To Train Your Dragon - 3"></div>
+            </div>
+    </div>
     </div>
     <script src="./main.js"></script>
 </body>
